@@ -39,6 +39,7 @@ setInterval(function(){
     if (characterLeft == blockLeft && blockTop < 500 && blockTop > 300) {
         alert("Game over! Score: " + counter);
         block.style.animation = "none";
+        window.parent.postMessage('nextLevel')
     }
     
 })
